@@ -1,0 +1,21 @@
+<div>
+
+    <h1> We have data for  {{patients.length}}  patients </h1>
+    <form ng-submit = "createData()">
+        <input type="text" id="files" name="files[]"  ng-model = "patientName"/>
+        <br>
+        <button type  = "submit">Add</button>
+        <div id="list"></div>
+    <ul>
+        <li ng-repeat="patient in patients">
+            {{patient.name}}
+        </li>
+
+     <br>
+    </ul>
+    </form>
+
+
+</div>
+
+
